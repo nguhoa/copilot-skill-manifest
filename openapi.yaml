@@ -1,0 +1,17 @@
+openapi: 3.0.1
+info:
+  title: Yes Skill API
+  version: "1.0"
+paths:
+  /:
+    get:
+      summary: Returns yes
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+servers:
+  - url: "https://defaultc2983f0e34ee4b438abcc2f460fd26.be.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/4a25aa29bdfd420788c0c00696415c88/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=IJ-YCOVSoe8FuRLwSprjz7mlQqTkFxF_vGHG9wc1OMU"
