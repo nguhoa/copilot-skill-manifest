@@ -1,0 +1,24 @@
+{
+  "$schema": "https://aka.ms/agent-skill-manifest-schema",
+  "name": "Example Skill",
+  "description": "Delegates requests to another Copilot agent",
+  "version": "1.0.0",
+  "publisher": "YourCompany",
+  "privacyUrl": "https://yourcompany.com/privacy",
+  "termsOfUseUrl": "https://yourcompany.com/terms",
+  "endpoints": [
+    {
+      "name": "default",
+      "url": "https://copilotstudio.microsoft.com/agents/be3c21a0-7797-4c35-aed2-7661ab359cf1"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "HandleRequest",
+      "description": "Handles delegated user requests"
+    }
+  ],
+  "authorization": {
+    "type": "Copilot"
+  }
+}
